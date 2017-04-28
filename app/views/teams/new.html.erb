@@ -1,0 +1,10 @@
+New Team
+<%=form_for  @team do |team| %>
+<h3><%= team.label :name %>
+<%=team.text_field :team_name %></h3>
+<h3><%= team.label :coach %>
+  <%= team.text_field :coach %></h3>
+  <%=team.submit "Create" %>
+
+
+<% end %>

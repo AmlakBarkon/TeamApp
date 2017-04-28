@@ -1,0 +1,7 @@
+
+<h1><%= @team.team_name %>
+  <%= link_to "Delete Team" ,team_path(@team), method: :delete %></h1>
+<% @team.players.each do |player| %>
+<h5><%= link_to (image_tag player.img_url), team_player_path(@team, player)%></h5>
+
+<% end %>

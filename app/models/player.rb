@@ -1,3 +1,3 @@
 class Player < ApplicationRecord
-  belong_to :team
+  belongs_to :team
 end
